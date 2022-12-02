@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #c4d5f8;
+}
+h4 {
+  font-size: 48px;
+  font-family: "Lato", sans-serif;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+.input-details {
+  display: flex;
+  gap: 30px;
+  padding-top: 5%;
+  justify-content: center;
+}
+.second-path {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  background-color: #041331;
+}
+.paragraph {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+}
+#email-address,
+#input-password {
+  height: 50px;
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+p {
+  margin-top: 2%;
+}
+a {
+  text-transform: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 7px;
+  text-align: center;
+  background-color: #072f94;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 2%;
+  font-family: "Lato", sans-serif;
+}
+.continue {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Lato", sans-serif;
+}
+.f-g {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+}
+.facebook,
+.google {
+  padding: 5px;
+  text-align: end;
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  margin-top: 3%;
+  font-family: "Lato", sans-serif;
+}
