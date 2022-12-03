@@ -48,7 +48,7 @@ You are expected to do the following:
 
 - mood boards
 
-###  #TeamSparrowpp 
+###  #TeamSparrowpp.
 
 
 
