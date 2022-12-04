@@ -59,7 +59,7 @@ We have attached the necessary links for better understanding of our project.
 
 <!--Project Database Schema-->
 #### `Database Schema:`
-[Database schema](https://github.com/zuri-training/TeamSparrowpp-qr_gen/static/images/Schema)
+[Database schema](https://github.com/zuri-training/TeamSparrowpp-qr_gen/static/images/Schema.jpg)
 
 #### `Mood boards:`
 [Mood boards](https://figma.com/)
