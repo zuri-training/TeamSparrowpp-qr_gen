@@ -51,7 +51,7 @@ A platform that allows users generate QR code that specifically does something w
 We have attached the necessary links for better understanding of our project.
 
 #### `Project Documentation:`
-> <a href="https://https://docs.google.com/document/d/1IO4Uo2x3AgA8C7coABzJxRnoXM5g0VSoyFFFnuNm-Ds/edit?usp=sharing">TeamSparrowpp QR_Generator Docs</a>
+> <a href="https://docs.google.com/document/d/1IO4Uo2x3AgA8C7coABzJxRnoXM5g0VSoyFFFnuNm-Ds/edit?usp=sharing">TeamSparrowpp QR_Generator Docs</a>
 
 <!-- Project Design Sketch -->
 #### `Project Design Sketch:`
