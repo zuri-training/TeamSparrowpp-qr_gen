@@ -85,7 +85,7 @@ We have attached the necessary links for better understanding of our project.
   - __Database__ <br/>
   ![POSTGRE-SQL-brightgreen](https://user-images.githubusercontent.com/72948572/183910301-8bcb404e-4fdd-497f-a493-a33430561a9b.svg)
   
-  - __Project Mnagement__ <br/>
+  - __Version Tracking__ <br/>
   ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
   <br><br>
 
