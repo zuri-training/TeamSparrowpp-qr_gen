@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zuri-training/TeamSparrowpp-qr_gen/">
-    <img src="https://github.com/zuri-training/TeamSparrowpp-qr_gen/blob/main/static/images/image1.png" alt="Logo" width="300" height="250">
+    <img src="https://github.com/zuri-training/TeamSparrowpp-qr_gen/blob/main/static/images/image1.png" alt="Logo"> <!--width="300" height="250"-->
   </a>
 
 <h3 align="center">QR Create</h3>
@@ -109,8 +109,8 @@ We have attached the necessary links for better understanding of our project.
   <br><br>
 
 
-
-    <h1 >What are You Waiting For?? Try out QRCreate Today!!!</h1>
+<div align="center">
+    <h1> What are You Waiting For?? Try out QRCreate Today!!!</h1>
 </div>
 
 
