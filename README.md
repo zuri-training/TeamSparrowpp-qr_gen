@@ -55,14 +55,14 @@ We have attached the necessary links for better understanding of our project.
 
 <!-- Project Design Sketch -->
 #### `Project Design Sketch:`
-> <a href="https://www.figma.com/">TeamSparrowpp QR_Generator Design Sketch</a>
+> <a href="https://www.figma.com/file/YQt9Ek5Ag6pA1MSUNYC8bB/Untitled?node-id=298%3A763">TeamSparrowpp QR_Generator Design Sketch</a>
 
 <!--Project Database Schema-->
 #### `Database Schema:`
 [Database schema](https://github.com/zuri-training/TeamSparrowpp-qr_gen/blob/main/static/images/Schema.jpg)
 
 #### `Mood boards:`
-[Mood boards](https://figma.com/)
+[Mood boards](https://www.figma.com/file/69WTNnIDkrtL4IIRkP3ZSv/Mood-Board-(Copy)?node-id=0%3A1&t=cU62ZfenT7jozyy2-1)
 
 <!-- Github Project Organization -->
 #### `Github Project Organization:`
