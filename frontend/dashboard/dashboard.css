@@ -11,7 +11,7 @@
 }
 
 #logo {
-  height: 29px;
+  height: 39px;
   width: 140px;
   margin-right: 75px;
   margin-left: 42px;
@@ -221,8 +221,12 @@ button {
   border-color: #0a42b1;
 }
 
-#qr,
 #folder {
+  width: 30px;
+  height: 25px;
+}
+
+#qr {
   width: 25px;
   height: 25px;
 }
