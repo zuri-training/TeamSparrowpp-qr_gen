@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  padding-left: 150px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#logo {
+  height: 45px;
+  width: 140px;
+  margin-right: 75px;
+  margin-left: 42px;
+}
+
+.one {
+  background-color: #c4d5f8;
+  padding-top: 20px;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+}
+
+body {
+  font-size: 18px;
+  background-color: #f4f6fa;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#code {
+  padding-right: 40px;
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  gap: 20px;
+}
+
+#btn1 {
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  margin-right: 60px;
+}
+
+.log {
+  color: red;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  opacity: 90%;
+}
+
+#text {
+  padding-right: 40px;
+}
+
+#settings {
+  width: 30px;
+  height: 30px;
+}
+
+#billing {
+  width: 30px;
+  height: 30px;
+}
+
+#plans,
+#profile {
+  width: 30px;
+  height: 30px;
+}
+
+.settings,
+.profile {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #535555;
+}
+
+.billing {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #656b69;
+  font-weight: 500;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #535555;
+}
+
+#codes {
+  width: 30px;
+  height: 30px;
+}
+
+#users {
+  width: 30px;
+  height: 30px;
+}
+
+#contact {
+  width: 30px;
+  height: 30px;
+}
+
+#log {
+  width: 30px;
+  height: 30px;
+}
+
+.codes {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #535555;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #535555;
+}
+
+button {
+  border-radius: 20px;
+  border-color: #0a42b1;
+}
+
+.two {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-bottom: 2px;
+}
+
+.three {
+  display: flex;
+  gap: 30px;
+  margin-left: 70px;
+}
+
+.monthly {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.annually {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.quarterly {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.size {
+  font-size: 12px;
+}
+
+#btn {
+  width: 130px;
+  height: 30px;
+  background-color: white;
+  margin-top: 20px;
+  color: #0a42b1;
+}
+
+fieldset {
+  height: 400px;
+  width: 250px;
+  border-color: white;
+}
+
+fieldset:hover {
+  height: 500px;
+  padding-top: 50px;
+  border-color: #0a42b1;
+}
+
+#btn:hover {
+  background-color: #0a42b1;
+  color: white;
+}
