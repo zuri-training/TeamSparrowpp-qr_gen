@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Local Apps
     'accounts.apps.AccountsConfig',
+    'pages.apps.PagesConfig',
 ]
 
 SITE_ID = 1
@@ -62,6 +63,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 LOGIN_REDIRECT_URL = "dashboard"
 ACCOUNT_LOGOUT_REDIRECT = "home"
+ACCOUNT_SIGNUP_REDIRECT_URL = "account_login"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
