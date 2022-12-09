@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Local Apps
     'accounts.apps.AccountsConfig',
+    'rest_framework',
 ]
 
 SITE_ID = 1
