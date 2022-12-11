@@ -4,7 +4,6 @@ from .forms import UserCreateForm
 from .models import CustomUser
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.http import HttpResponseForbidden, HttpResponseRedirect
 from django.contrib.auth import get_user_model

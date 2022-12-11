@@ -27,26 +27,16 @@ body {
 
 }
 
-#username{
-  width: 100%;
-  font-size: 16px;
-  background-color: #c4d5f8;
-  border-radius: 15px;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  padding: 13px 10px;
-}
-
 #email,
 #password1,
-#password2 {
+#password2,
+#username {
   width: 100%;
   font-size: 16px;
   background-color: #c4d5f8;
   border-radius: 15px;
   border-style: solid;
-  border-color: black;
+  /* border-color: black; */
   border-width: 1px;
   padding: 13px 10px;
   /* margin: 5px; */
