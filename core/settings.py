@@ -38,32 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Third party apps
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
-
     # Local Apps
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
 ]
 
-SITE_ID = 1
 
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 AUTHENTICATION_BACKEND = (
     "django.contrib.auth.backends.ModelBackend",
-    "allauth.account.auth_backends.AuthenticationBackend",
 )
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
-LOGIN_REDIRECT_URL = "dashboard"
-ACCOUNT_LOGOUT_REDIRECT = "home"
-ACCOUNT_SIGNUP_REDIRECT_URL = "account_login"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% load account socialaccount %}
 {% block head_title %}{% trans "Login" %}{% endblock %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/login.css' %}" />
@@ -9,94 +8,78 @@
 
 <body>
   {% block content %}
-  {% get_providers as socialaccount_providers %}
 
   <main>
     <div class="img">
       <img src="{% static 'images/image1.png' %}" height="35px" width="148px" />
     </div>
-
-    <div class="input-details">
-      <img src="{% static 'images/image2.png' %}" height="500px" width="600px" alt="login.png" />
-      <div class="second-path">
-        <h4>Welcome Back</h4>
-        <p class="paragraph">Please sign into your account</p>
-        <div class="e-mail">
-          <p>E-mail address</p>
-          <input type="text" id="email-address" placeholder="sample@maill.com" />
-        </div>
-        <div class="password">
-          <p>Password</p>
-          <input type="password" id="input-password" placeholder="Enter password here" />
-        </div>
-        <div class="forgot-pass">
-          <a href="#" target="_blank">Forgot password?</a>
-        </div>
-        <div>
-          <button class="btn">Log in</button>
-        </div>
-        <div>
-          <p class="continue">or continue with</p>
-        </div>
-        <div class="f-g">
+    <form method="POST">
+      {% csrf_token %}
+      <div class="input-details">
+        <img src="{% static 'images/image2.png' %}" height="500px" width="600px" alt="login.png" />
+        <div class="second-path">
+          <h4>Welcome Back</h4>
+          <p class="paragraph">Please sign into your account</p>
+          <div class="e-mail">
+            <p>E-mail address</p>
+            <input
+              type="text"
+              id="email-address"
+              placeholder="sample@mail.com"
+              name="email"
+            />
+          </div>
+          <div class="password">
+            <p>Password</p>
+            <input
+              type="password"
+              id="input-password"
+              placeholder="Enter password here"
+              name="password"
+            />
+          </div>
+          <div class="forgot-pass">
+            <a href="#" target="_blank">Forgot password?</a>
+          </div>
           <div>
-            <button class="google">
-              <div class="icon-first">
-                <img src="{% static 'images/image3.png' %}" alt="" height="30px" width="30px" class="img-first" />
-                <p class="google-sign">Sign in with Google</p>
-              </div>
-            </button>
-            <button class="facebook">
-              <div class="icon-second">
-                <img src="{% static 'images/facebook.png' %}" alt="" height="30px" width="30px" class="img-second" />
-                <p class="facebook-sign">Sign in with Facebook</p>
-              </div>
-            </button>
+            <input type="submit" value="Log in" class="btn" />
+          </div>
+          <div>
+            <p class="continue">or continue with</p>
+          </div>
+          <div class="f-g">
+            <div>
+              <button class="google">
+                <div class="icon-first">
+                  <img
+                    src="image3.png"
+                    alt=""
+                    height="30px"
+                    width="30px"
+                    class="img-first"
+                  />
+                  <p class="google-sign">Sign in with Google</p>
+                </div>
+              </button>
+              <button class="facebook">
+                <div class="icon-second">
+                  <img
+                    src="facebook.png"
+                    alt=""
+                    height="30px"
+                    width="30px"
+                    class="img-second"
+                  />
+                  <p class="facebook-sign">Sign in with Facebook</p>
+                </div>
+              </buttton>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </main>
   {% endblock content %}
 </body>
 
 </html>
-
-
-
-
-
-
-{% get_providers as socialaccount_providers %}
-
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-  of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-  for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
-
-<div class="socialaccount_ballot">
-
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
-
-
-</div>
-
-{% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-  <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-</p>
-{% endif %}
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>

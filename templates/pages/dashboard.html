@@ -50,13 +50,13 @@
       <br />
 
       <br />
-      <a href="{% url 'account_logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt=""
+      <a href="{% url 'logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt=""
           id="log" />Logout</a>
 
       <br />
 
       <br />
-      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt="" id="profile" />Profile</a>
+      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt="" id="profile" />{{request.user.username}}</a>
 
       <br />
 
