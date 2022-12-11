@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% load account socialaccount %}
 {% block head_title %}{% trans "Registration page" %}{% endblock head_title %}
 {% block extra_head %}    
 <link rel="stylesheet" href="{% static 'css/registration.css' %}" />
 {% endblock %}
 <body>
   {% block content %}
-  {% get_providers as socialaccount_providers %}
   <header><img src="{% static 'images/img1.png' %}" alt="" class="logo-image" /></header>
 
   <div class="container">
@@ -25,21 +23,26 @@
 
       <br />
 
-      <form method="post">
+      <form method="POST">
         {% csrf_token %}
-        <label for="email">Email address</label>
-        <br /><input type="email" id="email" placeholder="sample@gmail.com" />
+
+        {% for field in form %}
+        <p>{{field.label_tag}}</p>
+        {{field}}
+        {% endfor %}
+        <!-- <label for="email">Email address</label>
+        <br /><input type="email" id="email" placeholder="sample@gmail.com" name="email"/>
 
         <br />
 
         <br />
 
         <label for="password">Password</label>
-        <br /><input type="password" id="password" placeholder="Enter password here" />
+        <br /><input type="password" id="password" placeholder="Enter password here" name="password"/>
 
         <br />
 
-        <br />
+        <br /> -->
 
         <input type="submit" value="Register" class="btn1">
       </form>
