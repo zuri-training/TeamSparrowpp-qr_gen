@@ -20,6 +20,7 @@
         <div class="second-path">
           <h4>Welcome Back</h4>
           <p class="paragraph">Please sign into your account</p>
+          <p>Don't have an account?<a href="{% url 'signup' %}">Register</a></p>
           <div class="e-mail">
             <p>E-mail address</p>
             <input
@@ -52,7 +53,7 @@
               <button class="google">
                 <div class="icon-first">
                   <img
-                    src="image3.png"
+                    src="{% static 'images/image3.png' %}"
                     alt=""
                     height="30px"
                     width="30px"
@@ -64,7 +65,7 @@
               <button class="facebook">
                 <div class="icon-second">
                   <img
-                    src="facebook.png"
+                    src="{% static 'images/facebook.png' %}"
                     alt=""
                     height="30px"
                     width="30px"

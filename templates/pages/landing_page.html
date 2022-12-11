@@ -19,7 +19,7 @@
           <li><a href="http://" id="faq">FAQ</a></li>
           <li><a href="http://" id="login">Log in</a></li>
         </ul>
-        <a href="{% url 'account_signup' %}" class="register">Register</a>
+        <a href="{% url 'signup' %}" class="register">Register</a>
       </nav>
     </header>
     <section id="creation">
@@ -32,7 +32,7 @@
             Simple QR code generation, <br />
             management, and statistical tracking.
           </p>
-          <a href="{% url 'account_signup' %}" class="second-register">Create QR code → </a>
+          <a href="{% url 'signup' %}" class="second-register">Create QR code → </a>
         </div>
         <div class="img-creation">
           <img src="{% static 'images/image14.png' %}" height="350px" width="350px" alt="qrcode.png" class="image-first" />
