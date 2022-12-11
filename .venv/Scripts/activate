@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\HP\Desktop\python\TeamSparrowpp-qr_gen\.venv"
+VIRTUAL_ENV="C:\Users\dell\Desktop\TeamSparrowpp-qr_gen\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

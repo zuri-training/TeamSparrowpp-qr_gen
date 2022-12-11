@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\HP\Desktop\python\TeamSparrowpp-qr_gen\.venv
+set VIRTUAL_ENV=C:\Users\dell\Desktop\TeamSparrowpp-qr_gen\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
