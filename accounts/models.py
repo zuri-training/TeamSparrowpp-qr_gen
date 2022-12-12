@@ -5,26 +5,23 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 # Create your models here.
 
 class MyAccountManager(BaseUserManager):
-	def create_user(self, email, username, password=None):
+	def create_user(self, email,username,  password=None):
 		if not email:
 			raise ValueError('Email address required')
-		if not username:
-			raise ValueError('Username required')
+		username = None
 
 		user = self.model(
-			email=self.normalize_email(email),
-			username=username,
+			email=self.normalize_email(email)
 		)
 
 		user.set_password(password)
 		user.save(using=self._db)
 		return user
 
-	def create_superuser(self, email, username, password):
+	def create_superuser(self, email, password):
 		user = self.create_user(
 			email=self.normalize_email(email),
-			password=password,
-			username=username,
+			password=password
 		)
 		user.is_admin = True
 		user.is_staff = True
@@ -35,7 +32,7 @@ class MyAccountManager(BaseUserManager):
 
 class CustomUser(AbstractBaseUser):
 	email 					= models.EmailField(verbose_name="email", max_length=60, unique=True)
-	username 				= models.CharField(max_length=30, unique=True)
+	username				= None
 	date_joined				= models.DateTimeField(verbose_name='date joined', auto_now_add=True)
 	last_login				= models.DateTimeField(verbose_name='last login', auto_now=True, null='true')
 	is_admin				= models.BooleanField(default=False)
@@ -45,7 +42,7 @@ class CustomUser(AbstractBaseUser):
 
 
 	USERNAME_FIELD = 'email'
-	REQUIRED_FIELDS = ['username']
+	REQUIRED_FIELDS = []
 
 	objects = MyAccountManager()
 

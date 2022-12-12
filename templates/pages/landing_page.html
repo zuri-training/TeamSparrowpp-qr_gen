@@ -17,7 +17,7 @@
           <li><a href="http://" id="language">Language</a></li>
           <li><a href="http://" id="prices">Plans and prices</a></li>
           <li><a href="http://" id="faq">FAQ</a></li>
-          <li><a href="http://" id="login">Log in</a></li>
+          <li><a href="{% url 'account_login' %}" id="login">Log in</a></li>
         </ul>
         <a href="{% url 'account_signup' %}" class="register">Register</a>
       </nav>

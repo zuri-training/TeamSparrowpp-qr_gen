@@ -25,22 +25,24 @@
 
       <br />
 
-      <form method="post">
-        {% csrf_token %}
-        <label for="email">Email address</label>
-        <br /><input type="email" id="email" placeholder="sample@gmail.com" />
+      <form class="signup" id="signup_form" method="post" accept-charset="utf-8" action= "{% url 'account_signup' %}" > {% csrf_token %}
+        {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
 
+        <label for="email">Email address</label>
+        <br />
+        <input type="email" id="email" placeholder="sample@gmail.com" name="email">
+        
         <br />
 
         <br />
 
         <label for="password">Password</label>
-        <br /><input type="password" id="password" placeholder="Enter password here" />
+        <br /><input type="password" id="password" placeholder="Enter password here"  name="password1">
 
         <br />
-
         <br />
-
         <input type="submit" value="Register" class="btn1">
       </form>
 

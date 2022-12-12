@@ -60,10 +60,17 @@ AUTHENTICATION_BACKEND = (
 )
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS =True
 LOGIN_REDIRECT_URL = "dashboard"
 ACCOUNT_LOGOUT_REDIRECT = "home"
-ACCOUNT_SIGNUP_REDIRECT_URL = "account_login"
+ACCOUNT_SIGNUP_REDIRECT_URL = "home"
+ACCOUNT_USERNAME_REQUIRED = False # new
+ACCOUNT_AUTHENTICATION_METHOD = "email" # new
+ACCOUNT_EMAIL_REQUIRED = True # new
+ACCOUNT_UNIQUE_EMAIL = True # new
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+#ACCOUNT_FORMS = {'signup': 'accounts.forms.RegistrationForm'}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

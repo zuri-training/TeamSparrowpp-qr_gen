@@ -16,9 +16,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#from django.contrib.auth import views as auth_views
+#from django.conf.urls.static import static
+#from django.conf import settings
+
+
+from accounts.views import (
+    registration_view,
+    logout_view,
+    login_view,
+    account_view,
+	must_authenticate_view,
+)
+
 urlpatterns = [
     # Admin url
     path('admin/', admin.site.urls),
+     #path('account/', account_view, name="account"),
+      #path('login/', login_view, name="login"),
+       path('accounts/signup', registration_view, name="signup"),
     # Accounts url
     path("accounts/", include("allauth.urls")),
     # Pages url
