@@ -83,7 +83,7 @@ We have attached the necessary links for better understanding of our project.
   ![python-3670A0](https://user-images.githubusercontent.com/72948572/183910681-b6193dcd-8242-4a5e-af78-d79f99fc40b6.svg) ![django-#092E20](https://user-images.githubusercontent.com/72948572/183910701-cdc634b5-9524-4158-8063-045000741e42.svg)
 
   - __Database__ <br/>
-  ![POSTGRE-SQL-brightgreen](https://user-images.githubusercontent.com/72948572/183910301-8bcb404e-4fdd-497f-a493-a33430561a9b.svg)
+    SQLite3
   
   - __Version Tracking__ <br/>
   ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
