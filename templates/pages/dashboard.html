@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% block head_title %}{% trans "Dashboard" %}{% endblock head_title %}
+{% block head_title %}{% trans "QRCREATE-Dashboard" %}{% endblock head_title %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
 {% endblock %}
@@ -11,7 +11,9 @@
   {% block content %}
   <div class="container">
     <div class="one">
+      <a href="{% url 'home' %}" id="home">
       <img src="{% static 'images/logo2.png' %}" alt="logo" id="logo" />
+      </a>
       <br />
 
       <br />
