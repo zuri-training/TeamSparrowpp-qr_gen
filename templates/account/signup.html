@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% block head_title %}{% trans "Registration page" %}{% endblock head_title %}
+{% block head_title %}{% trans "QRCREATE-Registration" %}{% endblock head_title %}
 {% block extra_head %}    
 <link rel="stylesheet" href="{% static 'css/registration.css' %}" />
 {% endblock %}
 <body>
   {% block content %}
-  <header><img src="{% static 'images/img1.png' %}" alt="" class="logo-image" /></header>
+  <header>
+    <a href="{% url 'home' %}" id="home">
+    <img src="{% static 'images/img1.png' %}" alt="" class="logo-image" />
+    </a>
+  </header>
 
   <div class="container">
     <div class="large-image">

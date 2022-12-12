@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% block head_title %}{% trans "Login" %}{% endblock %}
+{% block head_title %}{% trans "QRCREATE-Login" %}{% endblock %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/login.css' %}" />
 {% endblock %}
@@ -11,7 +11,9 @@
 
   <main>
     <div class="img">
+      <a href="{% url 'home' %}" id="home">
       <img src="{% static 'images/image1.png' %}" height="35px" width="148px" />
+      </a>
     </div>
     <form method="POST">
       {% csrf_token %}

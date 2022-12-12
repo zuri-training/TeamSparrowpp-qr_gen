@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-{% block head_title %}{% trans "Dashboard" %}{% endblock head_title %}
+{% block head_title %}{% trans "QRCreate" %}{% endblock head_title %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/landing_page.css' %}" />
 {% endblock %}
@@ -11,13 +11,12 @@
   <main>
     <header style="height: 30px">
       <nav class="nav-bar">
-        <img src="{% static 'images/image4-removebg-preview.png' %}" height="30px" width="140px" alt="qrcreate.png"
-          style="margin-top:0.5%;" />
+          <img src="{% static 'images/image4.png' %}" height="30px" width="140px" alt="qrcreate.png" style="margin-top:0.5%;" />
         <ul class="nav-link">
           <li><a href="http://" id="language">Language</a></li>
-          <li><a href="http://" id="prices">Plans and prices</a></li>
+          <li><a href="#Billing" id="prices">Plans and prices</a></li>
           <li><a href="http://" id="faq">FAQ</a></li>
-          <li><a href="http://" id="login">Log in</a></li>
+          <li><a href="{% url 'login' %}" id="login">Log in</a></li>
         </ul>
         <a href="{% url 'signup' %}" class="register">Register</a>
       </nav>
