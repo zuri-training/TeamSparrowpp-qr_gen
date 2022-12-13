@@ -12,7 +12,7 @@
   <div class="container">
     <div class="one">
       <a href="{% url 'home' %}" id="home">
-      <img src="{% static 'images/logo2.png' %}" alt="logo" id="logo" />
+        <img src="{% static 'images/logo2.png' %}" alt="logo" id="logo" />
       </a>
       <br />
 
@@ -52,13 +52,13 @@
       <br />
 
       <br />
-      <a href="{% url 'logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt=""
-          id="log" />Logout</a>
+      <a href="{% url 'logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt="" id="log" />Logout</a>
 
       <br />
 
       <br />
-      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt="" id="profile" />{{request.user.username}}</a>
+      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt=""
+          id="profile" />{{request.user.username}}</a>
 
       <br />
 
@@ -147,12 +147,15 @@
       <br />
 
       <br />
-
       <div class="five">
-        <a href=""><button id="btn5" class="qr">
-            <img src="{% static 'images/qrcode.png' %}" alt="" id="qr" /> Create QR Code
-          </button></a>
+        <form action="" method="POST" id="qrLink">
+          {% csrf_token %}
+          <input type="url" name="url" placeholder="Enter URL">
+          <img src="{% static 'images/qrcode.png' %}" alt="" id="qr" />
+          <input type="submit" value="Create QR Code" id="btn5" class="qr">
       </div>
+      </form>
+      <img src="{% static 'images/myQR.png' %}" alt="">
     </div>
   </div>
   {% endblock %}

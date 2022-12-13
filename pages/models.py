@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class QRModel(models.Model):
+    url = models.URLField(max_length=200)
+    
