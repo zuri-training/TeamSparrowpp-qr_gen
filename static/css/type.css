@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #041b57;
+}
+
+#logo {
+  width: 150px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+#profile {
+  height: 40px;
+  width: 40px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#image {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.large {
+  width: 120px;
+  height: 160px;
+  border-color: #f4f6fa;
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #041b57;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: #041b57;
+  color: white;
+  border-color: white;
+}
+
+
+.small {
+  width: 100px;
+  height: 60px;
+  background-color: rgb(216, 214, 214);
+  margin: 10px;
+  border-radius: 6px;
+  border-color: rgb(216, 214, 214);
+}
+
+body {
+  background-color: #f4f6fa;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#one {
+  margin-right: 50px;
+  color: gray;
+}
+
+#two {
+  margin-right: 50px;
+  color: gray;
+}
+
+#span1 {
+  border-radius: 50%;
+  width: 30x;
+  height: 10px;
+  background: rgb(141, 132, 4);
+  border: 3px solid rgb(141, 132, 4);
+  color: white;
+  padding: 5px;
+}
+
+#span2 {
+  border-radius: 50%;
+  width: 30x;
+  height: 10px;
+  background: gray;
+  border: 3px solid gray;
+  color: white;
+  padding: 5px;
+}
+
+#span3 {
+  border-radius: 50%;
+  width: 30x;
+  height: 10px;
+  background: gray;
+  border: 3px solid gray;
+  color: white;
+  padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+fieldset:hover {
+    border-color: rgb(141, 132, 4);
+}
+
+#btn1 {
+    margin-left: 50px;
+}
+
+#btn2 {
+    margin-right: 50px;
+}
+
+button:hover {
+    background-color: #0638b6;
+    border-color: #0638b6;
+}
