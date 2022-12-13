@@ -8,3 +8,7 @@ def homePage(request):
 @login_required(login_url="login")
 def dashboard(request):
     return render(request, "pages/dashboard.html")    
+
+@login_required(login_url="login")
+def type(request):
+    return render(request, "pages/types.html")   
