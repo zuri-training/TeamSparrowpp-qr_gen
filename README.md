@@ -104,7 +104,7 @@ We have attached the necessary links for better understanding of our project.
 
   `Share` Authenticated users can share Generated QR codes to Twitter, Facebook or Even as an Email.
 
-  `Responsive` Allow user save data and come back to it.
+  `Responsive` Allow user save data and come back to it..
 
   <br><br>
 
