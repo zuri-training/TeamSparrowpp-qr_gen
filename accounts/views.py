@@ -11,7 +11,7 @@ from django.contrib.auth import get_user_model
 def signupPage(request):
     form = UserCreateForm()
     if request.user.is_authenticated:
-        return reverse("dashboard")
+        return redirect("dashboard")
     else:
         if request.method == "POST":
             print(form)

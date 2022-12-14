@@ -12,7 +12,7 @@
   <div class="container">
     <div class="one">
       <a href="{% url 'home' %}" id="home">
-      <img src="{% static 'images/logo2.png' %}" alt="logo" id="logo" />
+        <img src="{% static 'images/logo2.png' %}" alt="logo" id="logo" />
       </a>
       <br />
 
@@ -52,13 +52,13 @@
       <br />
 
       <br />
-      <a href="{% url 'logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt=""
-          id="log" />Logout</a>
+      <a href="{% url 'logout' %}" class="log"><img src="{% static 'images/exit.ico' %}" alt="" id="log" />Logout</a>
 
       <br />
 
       <br />
-      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt="" id="profile" />{{request.user.username}}</a>
+      <a href="Profile" class="profile"><img src="{% static 'images/profile.ico' %}" alt=""
+          id="profile" />{{request.user.username}}</a>
 
       <br />
 
@@ -78,7 +78,7 @@
         <a href=""><button id="btn3" class="folder">
             <img src="{% static 'images/folder.png' %}" alt="" id="folder" />Create Folder
           </button></a>
-        <a href=""><button id="btn2" class="qr">
+        <a href="{% url 'types' %}" id="type"><button id="btn2" class="qr">
             <img src="{% static 'images/qrcode.png' %}" alt="" id="qr" />Create QR Code
           </button></a>
       </div>
@@ -147,11 +147,10 @@
       <br />
 
       <br />
-
       <div class="five">
-        <a href=""><button id="btn5" class="qr">
-            <img src="{% static 'images/qrcode.png' %}" alt="" id="qr" /> Create QR Code
-          </button></a>
+        <a href="{% url 'types' %}" id="type"><button id="btn5" class="qr">
+          <img src="{% static 'images/qrcode.png' %}" alt="" id="qr" />Create QR Code
+        </button></a>
       </div>
     </div>
   </div>
