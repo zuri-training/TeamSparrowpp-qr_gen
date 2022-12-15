@@ -243,7 +243,7 @@ After making edits, type the below command in your terminal
 
 - __Create a pull request__
 
-- __Wait till a QR planet admin accepts and merges your pull request__
+- __Wait till a QRCreate admin accepts and merges your pull request__
 
   <br><br>
 
