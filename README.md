@@ -122,7 +122,7 @@ We have attached the necessary links for better understanding of our project.
 
 ##  `Setup and Installation`  
   __In your IDE run the following commands in the terminal to setup__
-- Install  environment in the root directory `qrcode_gen_project`
+- Install  environment in the root directory `TeamSparrowpp-qr_gen`
 
     ``` ruby
     pip install virtualenv
@@ -172,7 +172,7 @@ We have attached the necessary links for better understanding of our project.
 
   
     ``` ruby
-    python manage.py makemigrations qr_generator
+    python manage.py makemigrations core
     ```
 
 
@@ -181,7 +181,7 @@ We have attached the necessary links for better understanding of our project.
     ```
 
     ``` ruby
-    python manage.py migrate qr_generator
+    python manage.py migrate core
     ``` 
 
   ``` ruby
