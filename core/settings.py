@@ -133,6 +133,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+CORS_ORIGIN_ALLOW_ALL= True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -155,8 +157,3 @@ MEDIA_URL = '/media/'
 
 #CSRF_TRUSTED_ORIGINS = ['https://teamsparrowpp-qrgen-production-6a43.up.railway.app']
  
-CORS_ORIGIN_WHITELIST = [ 
-    'https://google.com',
-    'http://localhost:8000',
-    'https://teamsparrowpp-qrgen-production-6a43.up.railway.app',
- ]
