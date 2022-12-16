@@ -18,5 +18,5 @@ def URL(request):
         img.save(stream)
         context["svg"] = stream.getvalue().decode()
 
-    return render(request, "URL.html", context=context)
-# Create your views here.
+    return render("URL.html")
+

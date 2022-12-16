@@ -27,7 +27,7 @@ def signupPage(request):
                     user.save()
                     return redirect('login')
     context = {'form': form}
-    return render(request, "account/signup.html", context)
+    return render('account/signup.html')
 
 def loginPage(request):
     form = AuthenticationForm()
@@ -51,7 +51,7 @@ def loginPage(request):
         else:
             form = AuthenticationForm()
     context = {'form': form}
-    return render(request, "account/login.html", context)
+    return render('account/login.html')
 
 def logoutView(request):
     logout(request)
