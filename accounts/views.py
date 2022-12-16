@@ -14,7 +14,6 @@ def signupPage(request):
         return redirect("dashboard")
     else:
         if request.method == "POST":
-            print(form)
             form = UserCreateForm(request.POST)
             if form.is_valid():
                 user = form.save(commit=False)
