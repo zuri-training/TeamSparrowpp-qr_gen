@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+}
+
+header {
+  text-align: center;
+  background-color: #041331;
+}
+
+body {
+  background-color: #c4D5F8;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 80%;
+  padding: 0.9rem 0px;
+  /* position:static */
+
+}
+
+#email,
+#password1,
+#password2,
+#username {
+  width: 100%;
+  font-size: 16px;
+  background-color: #c4d5f8;
+  border-radius: 15px;
+  border-style: solid;
+  /* border-color: black; */
+  border-width: 1px;
+  padding: 13px 10px;
+  /* margin: 5px; */
+}
+
+button{
+  font-size: 16px;
+}
+
+.btn1 {
+  width: 100%;
+  border-radius: 12px;
+  border-style: none;
+  background-color: #072f94;
+  opacity: 50%;
+  color: #c4d5f8;
+  padding: 13px 10px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: rgba(150, 150, 150, 0.5);
+  font-weight: 600;
+  font-family: "Lato" sans-serif;
+}
+
+.one{
+  width: 50%;
+  margin: auto;
+  /* padding: 20px; */
+}
+
+.large-image{
+  width: 50%;
+  margin: auto;
+  /* padding: 20px; */
+}
+
+.main-image{
+  width: 100%;
+}
+
+.two {
+  text-align: center;
+}
+
+.logo-image {
+  height: 29px;
+  width: 148px;
+}
+
+.img2 {
+  height: 18px;
+  /* width: 18px; */
+  margin-right: 10px;
+}
+
+.img3 {
+  height: 18px;
+  /* width: 50%; */
+  margin-right: 10px;
+}
+
+.three {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #c4d5f8;
+  /* gap: 100px; */
+  /* padding-right: 50px; */
+  width: 100%;
+}
+
+.btn2,
+.btn3 {
+  background-color: #c4d5f8;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 16px;
+  height: 3rem;
+  width: 100%;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
