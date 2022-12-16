@@ -250,7 +250,7 @@ After making edits, type the below command in your terminal
 ## `Contributors`
 
 |__Name__ | __Slack Username__| __Track__|__Email Address__|
-|:--------|:------------------|-----------:|
+|:--------|:------------------|-----------|---------------:|
 | [Iniobong Effiong](https://github.com/Natzsmart)| `SirNatz`|`Fullstack-Developer`| [Send a Message](natty.smart@gmail.com)|
 | [Samuel Ibanga](https://github.com/SamuelIbanga5)| `Ibangajnr`|`Backend-Python`| [Send a Message](ibangajnr27@gmail.com)|
 | [Nadia Ahmed](https://github.com/nadisan)| `Nadia Ahmed`|`Fullstack-Developer`| [Send a Message](nadiawellela@gmail.com)|
