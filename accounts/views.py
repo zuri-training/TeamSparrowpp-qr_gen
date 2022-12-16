@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect,render_to_response
+from django.shortcuts import render, redirect
 from django.urls import reverse, reverse_lazy
 from .forms import UserCreateForm
 from .models import CustomUser
@@ -26,8 +26,8 @@ def signupPage(request):
                     messages.success(request, f"Account has been successfully created for {user}.")
                     user.save()
                     return redirect('login')
-    RequestContext = {'form': form}
-    return render_to_response('account/signup.html', context_instance=RequestContext(request))
+    context = {'form': form}
+    return render(request, "account/signup.html", context)
 
 def loginPage(request):
     form = AuthenticationForm()
@@ -50,9 +50,9 @@ def loginPage(request):
                 messages.error(request, 'Account does not exist.')
         else:
             form = AuthenticationForm()
-    RequestContext = {'form': form}
-    return render_to_response("account/login.html", context_instance=RequestContext(request))
-    
+    context = {'form': form}
+    return render(request, "account/login.html", context)
+
 def logoutView(request):
     logout(request)
     return redirect('login')
