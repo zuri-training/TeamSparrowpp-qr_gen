@@ -104,15 +104,177 @@ We have attached the necessary links for better understanding of our project.
 
   `Share` Authenticated users can share Generated QR codes to Twitter, Facebook or Even as an Email.
 
-  `Responsive` Allow user save data and come back to it.
+  `Responsive` Allow user save data and come back to it..
 
   <br><br>
 
+  ## `How To Use Locally:`
+<br>
+
+
+## `Requirements`
+* An IDE
+* Git & GitHub 
+* A compatible browser
+* Python 3.8+
+  <br><br>
+
+
+##  `Setup and Installation`  
+  __In your IDE run the following commands in the terminal to setup__
+- Install  environment in the root directory `TeamSparrowpp-qr_gen`
+
+    ``` ruby
+    pip install virtualenv
+    ```
+- Create the virtual environment in the same root directory
+
+  - FOR WINDOWS USERS
+
+    ``` ruby
+    virtualenv <environment_name>
+    ``` 
+    - Activate virtual environment
+
+      ``` ruby
+      <environment_name>\scripts\activate
+      ``` 
+
+  - FOR LINUX USERS
+
+    ``` ruby
+    python3 -m virtualenv <environment_name>
+    ``` 
+    - Activate virtual environment
+
+      ``` ruby
+      source/<environment_name>/bin/activate
+      ```
+  <br>
+
+- Change directory
+
+  ``` ruby
+  cd qr_gen_team60/qr_gen_project/
+  ```
+<br>
+
+
+- Install all packages/ Dependencies used
+    ``` ruby
+    pip install -r requirements.txt
+    ```
+- Run Migrations for the Apps
+
+    ``` ruby
+    python manage.py makemigrations accounts
+    ``` 
+
+  
+    ``` ruby
+    python manage.py makemigrations core
+    ```
+
+
+    ``` ruby
+    python manage.py migrate accounts
+    ```
+
+    ``` ruby
+    python manage.py migrate core
+    ``` 
+
+  ``` ruby
+    python manage.py migrate
+    ```
+
+- Run Server
+
+    ``` ruby
+    python manage.py runserver
+    ```
+
+  <br><br>
+## `How to Contribute `
+- __Fork the project repository__<br/>
+In the project repository on github click the fork button in the upper right corner
+
+- __Clone the forked repository to your local machine__
+
+    ```ruby
+    git clone https://github.com/zuri-training/TeamSparrowpp-qr_gen.git
+    ```
+- __Navigate to the local directory and open in your IDE/ Text Editor__
+
+- __In the IDE terminal set upstream branch__
+
+    ```ruby
+    git remote add upstream https://github.com/zuri-training/TeamSparrowpp-qr_gen.git
+    ```
+- __Pull upstream__
+
+    ```ruby
+    git pull upstream production
+    ```
+    
+- __Create a new branch to make your changes__
+
+    ```ruby
+    git checkout -b <your_branch_name>
+    ```
+    
+- __Stage the file__
+After making edits, type the below command in your terminal
+
+    ```ruby
+    git add <changed_files>
+    ```
+    
+- __Commit changes__
+
+    ```ruby
+    git commit -m "your_message"
+    ```
+- __Push your local changes__
+
+    ```ruby
+    git push origin <your_branch_name>
+    ```
+
+- __Create a pull request__
+
+- __Wait till a QRCreate admin accepts and merges your pull request__
+
+  <br><br>
+
+## `Contributors`
+
+|__Name__ | __Slack Username__| __Track__|__Email Address__|
+|:--------|:------------------|-----------|---------------:|
+| [Iniobong Effiong](https://github.com/Natzsmart)| `SirNatz`|`Fullstack-Developer`| [Send a Message](natty.smart@gmail.com)|
+| [Samuel Ibanga](https://github.com/SamuelIbanga5)| `Ibangajnr`|`Backend-Python`| [Send a Message](ibangajnr27@gmail.com)|
+| [Nadia Ahmed](https://github.com/nadisan)| `Nadia Ahmed`|`Fullstack-Developer`| [Send a Message](nadiawellela@gmail.com)|
+| [Ajiola Joel Oluwatofunmi](https://github.com/Joel0007tech)| `Joel Ajiola`|`Frontend-Developer`| [Send a Message](ajiolajoel@gmail.com)|
+| [Eugene Tenadu Mensah](https://github.com/mtenadu4)| `Ononero`|`Frontend-Developer`| [Send a Message](mtenadu4@gmail.com)|
+| [Isaac Oluwafunmi](https://github.com/)| `---`|`Product Designer`| [Send a Message](isaacoluwafunmi@gmail.com)|
+| [Ruth Nelson](https://github.com/)| `Rutty_nel`|`Product Designer`| [Send a Message](nelsonruth2016@gmail.com)|
+| [Aladimma Chioma](https://github.com/)| `Clarie`|`Product Designer`| [Send a Message](chiomaaladimma@gmail.com)|
+| [Mfonabasi Akpan](https://github.com/)| `Mfonabasi Akpan`|`Product Designer`| [Send a Message](mfonabasiakpan01@gmail.com)|
+| [Moses Yakubu](https://github.com/)| `Moses Yakubu`|`Product Designer`| [Send a Message](asibomoses@gmail.com)|
+| [Adewale Ogunyebi](https://github.com/)| `---`|`Product Designer`| [Send a Message](adewaleisunlimited@gmail.com)|
+| [Olamide Amosun](https://github.com/)| `---`|`Product Designer`| [Send a Message](natty.smart@gmail.com)|
+| [Chioma Onuoha](https://github.com/)| `---`|`Product Designer`| [Send a Message](sylvapatricia4@gmail.com)|
+| [Abdulmalik Bolaji](https://github.com/)| `---`|`Product Designer`| [Send a Message](@gmail.com)|
+| [Solomon Olorunfemi](https://github.com/)| `---`|`Product Designer`| [Send a Message](femiklm38@gmail.com)|
+| [Prosper Eromosele](https://github.com/)| `---`|`Frontend & Python`| [Send a Message](chimpoe51@gmail.com)|
+| [Okoye Jachike](https://github.com/)| `---`|`Python`| [Send a Message](collins.kcj@gmail.com)|
+  <br>  <br><br>
 
 <div align="center">
     <h1> What are You Waiting For?? Try out QRCreate Today!!!</h1>
 </div>
 
+![QR Create](https://github.com/zuri-training/TeamSparrowpp-qr_gen/blob/main/static/images/qr-code.gif)
 
 
 
