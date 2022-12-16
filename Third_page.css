@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: rgb(192, 190, 190);
+  font-family: "Lato", sans-serif;
+}
+.heading {
+  background-color: #072052;
+}
+.heading-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.number-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 4%;
+}
+.number-flex p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: grey;
+  margin-bottom: 2%;
+}
+#first-flex-items {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid rgb(173, 171, 171);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid rgb(173, 171, 171);
+  border-radius: 7px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.first-text-flex {
+  display: flex;
+  gap: 550px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.second-text-flex {
+  display: flex;
+  gap: 480px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.third-text-flex {
+  display: flex;
+  gap: 20px;
+}
+.second-flex {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+.third-flex {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 1%;
+}
+.first-row-flex {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(124, 123, 123);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-radius: 5px;
+}
+.third--flex {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 3%;
+  margin-right: 20%;
+}
+
+.first-text-flex p {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  padding-top: 3px;
+}
+.second-text-flex p {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  padding-top: 3px;
+  padding-left: 30px;
+}
+.third-text-flex p {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  color: rgb(75, 74, 74);
+}
+.heading-third-flex {
+  margin-top: 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+.second-row-flex {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(124, 123, 123);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-radius: 5px;
+}
+.third-row-flex {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(124, 123, 123);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-radius: 5px;
+}
+#second-flex-items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(223, 219, 219);
+  border: 5px solid rgb(173, 171, 171);
+  justify-content: center;
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 5px;
+  padding: 3%;
+}
+.img-middle {
+  position: relative;
+}
+.img-middle img {
+  position: absolute;
+  top: 70%;
+  bottom: 70%;
+  margin-left: 50%;
+}
+.border-colour {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 5px;
+}
+.first-img-text-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.border-colour h4 {
+  padding-top: 2%;
+  color: grey;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.background-colour h4 {
+  padding-top: 2%;
+  color: grey;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.background-colour {
+  margin-top: 10px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 5px;
+}
+.border-colour p {
+  padding-top: 2%;
+  color: grey;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.background-colour p {
+  padding-top: 2%;
+  color: grey;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+footer {
+  background-color: #072052;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-back {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.footer-next {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #167df6;
+}
+.img-icon-flex {
+  display: flex;
+}
+.fa-bars {
+  color: white;
+}
+.img-icon-flex p {
+  color: white;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.corners {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+#image {
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.fieldset1 {
+  height: 50px;
+  width: 50px;
+}
+
+.fieldset2, .fieldset3 {
+  padding: 30px;
+  width: 530px;
+  border-radius: 10px;
+  background-color: white;
+  height: 150px;
+  border-color: white;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+#p {
+  margin-right: 170px;
+  margin-top: 7px;
+  color: gray;
+}
+
+#photo {
+  width: 80px;
+  height: 80px;
+}
+
+.logo {
+  margin: 30px;
+}
+
+#phone {
+  width: 30px;
+  height: 30px;
+}
+
+.website {
+  display: flex;
+ justify-content: space-between;
+ margin: 20px;
+}
+
+.fieldset4 {
+  margin: 20px;
+  background-color: rgb(223, 219, 219);
+}
+
+.fieldset5 {
+  width: 200px;
+  height: 400px;
+  margin-left: 150px;
+  padding: 20px;
+
+}
+
+#gray {
+  color: gray;
+}
