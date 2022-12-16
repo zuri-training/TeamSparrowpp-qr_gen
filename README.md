@@ -12,7 +12,7 @@
   <p align="center"><h3>
     </h3>
     <br />
-  <h3><a href="https://teamsparrowpp-qrgen-production-6a43.up.railway.app/">Live Hosting Link 👈</a></h3>
+  <h3><a href="https://teamsparrowpp-qrgen-production-6a43.up.railway.app/">Live Hosting Link👈</a></h3>
   <br />
     <h2><a href="https://github.com/zuri-training/TeamSparrowpp-qr_gen/README.md"><strong>Explore the docs »</strong></a></h2>
     <br />
