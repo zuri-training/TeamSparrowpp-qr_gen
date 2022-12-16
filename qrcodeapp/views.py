@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from .models import QRModel
 import qrcode.image.svg
 from io import BytesIO

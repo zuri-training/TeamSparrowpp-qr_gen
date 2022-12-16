@@ -7,12 +7,12 @@ import qrcode
 def homePage(request):
     if request.user.is_authenticated:
         return redirect("dashboard")
-    return render("pages/landing_page.html")
+    return render(request, "pages/landing_page.html")
 
 @login_required(login_url="login")
 def dashboard(request):
-    return render("pages/dashboard.html")    
+    return render(request, "pages/dashboard.html")    
 
 @login_required(login_url="login")
 def types(request):
-    return render("pages/types.html")   
+    return render(request, "pages/types.html")   
