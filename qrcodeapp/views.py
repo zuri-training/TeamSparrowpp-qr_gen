@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from .models import QRModel
 import qrcode.image.svg
 from io import BytesIO
@@ -17,5 +18,4 @@ def URL(request):
         img.save(stream)
         context["svg"] = stream.getvalue().decode()
 
-    return render("URL.html")
-
+    return render(request, "URL.html")
