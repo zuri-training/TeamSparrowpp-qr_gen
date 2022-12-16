@@ -157,6 +157,6 @@ MEDIA_URL = '/media/'
  
 CORS_ORIGIN_WHITELIST = [ 
     'https://google.com',
-    'https://www.google.com',
-    'https://teamsparrowpp-qrgen-production-6a43.up.railway.app/'
+    'http://localhost:8000',
+    'https://teamsparrowpp-qrgen-production-6a43.up.railway.app',
  ]
