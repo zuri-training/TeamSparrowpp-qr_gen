@@ -7,9 +7,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from django.http import HttpResponseForbidden, HttpResponseRedirect
 from django.contrib.auth import get_user_model
-from django.views.decorators.csrf import csrf_exempt
 
-@csrf_exempt
 def signupPage(request):
     form = UserCreateForm()
     if request.user.is_authenticated:
@@ -30,7 +28,6 @@ def signupPage(request):
     context = {'form': form}
     return render(request, "account/signup.html", context)
 
-@csrf_exempt
 def loginPage(request):
     form = AuthenticationForm()
     if request.user.is_authenticated:
